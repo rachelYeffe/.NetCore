@@ -45,7 +45,9 @@ function deleteItem(id) {
 }
 
 function displayEditForm(id) {
+   
     const item = tasking.find(item => item.id === id);
+
 
     document.getElementById('edit-TaskName').value = item.nameTasks;
     document.getElementById('edit-Id').value = item.id;
